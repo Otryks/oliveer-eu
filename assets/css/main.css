@@ -1,0 +1,90 @@
+@import url(./normalise.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary: #1E3E2F;
+    --white: #EBE3E1;
+    --black: #0E0E0E;
+
+    --bold: 700;
+    --regular: 400;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: var(--regular);
+}
+
+body {
+    background-color: var(--white);
+}
+
+.page__header {
+    height: 30dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.page__content {
+    height: 60dvh;
+    display: flex;
+    justify-content: center;
+}
+
+.page__footer {
+    height: 10dvh;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--bold);
+}
+
+.logo::before {
+    content: url(../pictures/wordmark_26h.svg);
+}
+
+.button-container {
+    margin-top: 6em;
+}
+
+.button {
+    display: flex;
+    background-color: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    align-items: center;
+    width: 350px;
+    height: 90px;
+    border-radius: 1em;
+    margin-bottom: 1.3em;
+    transition: 250ms;
+}
+
+.button:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    border: solid 3px var(--primary);
+    box-sizing: border-box;
+}
+
+.button__icon {
+    width: 40%;
+    font-size: 2.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.button__text--heading {
+    font-weight: var(--bold);
+    font-size: 1.2em;
+}
